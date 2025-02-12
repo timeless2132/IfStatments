@@ -20,13 +20,33 @@
                 }
                 else if (input >= 315 || input <= 45)
                 {
-
                     Console.WriteLine("North");
-                   
+                    Console.WriteLine();
+                    correctDir = true;
+                }
+                else if (input >= 46 && input <= 135)
+                {
+                    Console.WriteLine("East");
+                    Console.WriteLine();
+                    correctDir = true;
+                }
+                else if (input >= 136 && input <= 225)
+                {
+                    Console.WriteLine("South");
+                    Console.WriteLine();
+                    correctDir = true;
+                }
+                else if (input >= 226 && input <= 314)
+                {
+                    Console.WriteLine("West");
+                    Console.WriteLine();
+                    correctDir = true;
                 }
             }
-       
+            
 
+            //Part 2
+            
 
         }
     }
