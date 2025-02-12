@@ -43,10 +43,52 @@
                     correctDir = true;
                 }
             }
-            
+
 
             //Part 2
+            int fee = 4;
+           
+            Console.WriteLine("Enter how long you were parked for:");
+            int mins = Convert.ToInt32(Console.ReadLine());
+
             
+            if (mins <= 60)
+            {
+                fee += 2;
+            }
+            else if (mins >= 61 && mins <= 120)
+            {
+                fee += 4;
+            }
+            else if (mins >= 121 && mins <= 180)
+            {
+                fee += 6;
+            }
+            else if (mins >= 181 && mins <= 240)
+            {
+                fee += 8;
+            }
+            else if (mins >= 241 && mins <= 300)
+            {
+                fee += 10;
+            }
+            else if (mins >= 241 && mins <= 300)
+            {
+                fee +=12;
+            }
+            else if (mins >= 301 && mins <= 360)
+            {
+                fee += 14;
+            }
+            else if (mins >= 361)
+            {
+                fee += 16;
+            }
+           
+            Console.WriteLine("Your fee after that much time would be: $" + fee);
+
+            
+
 
         }
     }
